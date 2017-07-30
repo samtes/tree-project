@@ -83,7 +83,44 @@ body {
 }
 
 /* Style for icons */
+.close-btn, .closed, .collapsed, .file, .public-folder, .private-folder {
+  cursor: pointer;
+  background-image: url(./icon-sprite.png);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  width: 16px;
+  height: 13px;
+}
+.file, .public-folder, .private-folder {
+  width: 15px;
+  height: 14px;
+}
+.closed, .collapsed {
+  opacity: 0.4;
+  margin-right: 5px;
+}
+.closed {
+  background-position: -55px 1px;
+}
+.collapsed {
+  background-position: -69px 1px;
+}
+.file {
+  background-position: -28px 0px;
+}
+.public-folder {
+  background-position: 1px 0px;
+}
+.private-folder {
+  background-position: -14px 0px;
+}
 
+.selected .closed {
+  background-position: -84px 1px;
+}
+.selected .collapsed {
+  background-position: -98px 1px;
+}
 .close-btn {
   float: right;
   display: inline-block;
@@ -91,63 +128,6 @@ body {
   position: absolute;
   right: 16px;
   top: 19px;
-  cursor: pointer;
   opacity: 0.4;
-  background-image: url(./icon-sprite.png);
-  background-repeat: no-repeat;
   background-position: -42px -1px;
-  width: 16px;
-  height: 13px;
-}
-.closed {
-  cursor: pointer;
-  opacity: 0.4;
-  margin-right: 5px;
-  background-image: url(./icon-sprite.png);
-  background-repeat: no-repeat;
-  background-position: -55px 1px;
-  width: 16px;
-  height: 13px;
-}
-.selected .closed {
-  background-position: -84px 1px;
-}
-.collapsed {
-  cursor: pointer;
-  opacity: 0.4;
-  margin-right: 5px;
-  background-image: url(./icon-sprite.png);
-  background-repeat: no-repeat;
-  background-position: -69px 1px;
-  width: 16px;
-  height: 13px;
-}
-.selected .collapsed {
-  background-position: -98px 1px;
-}
-.file {
-  background-image: url(./icon-sprite.png);
-  background-repeat: no-repeat;
-  background-position: -28px 0px;
-  margin-right: 10px;
-  width: 15px;
-  height: 14px;
-}
-.public-folder {
-  cursor: pointer;
-  background-image: url(./icon-sprite.png);
-  background-repeat: no-repeat;
-  background-position: 1px 0px;
-  margin-right: 10px;
-  width: 15px;
-  height: 14px;
-}
-.private-folder {
-  cursor: pointer;
-  background-image: url(./icon-sprite.png);
-  background-repeat: no-repeat;
-  background-position: -14px 0px;
-  margin-right: 10px;
-  width: 15px;
-  height: 14px;
 }
