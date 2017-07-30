@@ -1,0 +1,15 @@
+{
+  "name": "tree-project-master",
+  "main": "index.js",
+  "authors": [
+    "Samuel Weldemariam <sweldemariam@gmail.com>"
+  ],
+  "description": "",
+  "license": "UNLICENSED",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "babel": "^5.8.38",
+    "react": "^15.6.1"
+  }
+}
